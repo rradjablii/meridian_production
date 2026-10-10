@@ -1,6 +1,7 @@
 package com.rradjabli.meridian.user_service.dto;
 
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
@@ -10,21 +11,21 @@ import lombok.Setter;
 @Getter
 public class UserRequestDto {
 
-    @NotNull
+    @NotBlank
     public String name;
 
-    @NotNull
+    @NotBlank
     public String surname;
 
-    @NotNull
+    @NotBlank
     @Email
     public String email;
 
-    @NotNull
+    @NotBlank
     @Size(min = 8)
     public String password;
 
-    @NotNull
+    @NotBlank
     public String phone;
 
 }

@@ -4,6 +4,7 @@ import com.rradjabli.meridian.user_service.dto.UserRequestDto;
 import com.rradjabli.meridian.user_service.dto.UserResponseDto;
 import com.rradjabli.meridian.user_service.entitiy.User;
 import com.rradjabli.meridian.user_service.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +22,7 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<UserResponseDto> createUser(@RequestBody UserRequestDto user){
+    public ResponseEntity<UserResponseDto> createUser(@RequestBody @Valid UserRequestDto user){
         return userService.registerNewUser(user);
     }
 

@@ -3,6 +3,7 @@ package com.rradjabli.meridian.user_service.dto;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.Instant;
 import java.time.LocalDate;
 
 @Setter
@@ -13,6 +14,6 @@ public class UserResponseDto {
     private String surname;
     private String email;
     private String phone;
-    private LocalDate registeredDate;
+    private Instant registeredDate;
 
 }

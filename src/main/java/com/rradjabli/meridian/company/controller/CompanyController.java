@@ -1,7 +1,6 @@
 package com.rradjabli.meridian.company.controller;
 
 import com.rradjabli.meridian.Audit.dto.AuditRequestDTO;
-import com.rradjabli.meridian.Audit.entity.Audit;
 import com.rradjabli.meridian.Audit.service.AuditService;
 import com.rradjabli.meridian.company.dto.CompanyRequestDTO;
 import com.rradjabli.meridian.company.dto.CompanyResponseDTO;
@@ -34,8 +33,6 @@ public class CompanyController {
     @PostMapping("/register")
     public ResponseEntity<CompanyResponseDTO> registerNewCompany(
             @RequestBody @Valid CompanyRequestDTO companyRequestDTO){
-
-        if(auditService.)
 
         try{
             UserResponseDto userResponseDto = userService.registerNewUser(companyRequestDTO.getUserRequestDTO());

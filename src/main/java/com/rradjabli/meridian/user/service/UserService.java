@@ -10,7 +10,6 @@ import com.rradjabli.meridian.user.entity.User;
 import com.rradjabli.meridian.exception.UserAlreadyExistsException;
 import com.rradjabli.meridian.user.mapper.UserMapper;
 import com.rradjabli.meridian.user.repo.UserRepo;
-import org.apache.coyote.Request;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

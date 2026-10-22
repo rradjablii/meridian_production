@@ -1,9 +1,9 @@
-package com.rradjabli.meridian.Audit.service;
+package com.rradjabli.meridian.audit.service;
 
-import com.rradjabli.meridian.Audit.dto.AuditRequestDTO;
-import com.rradjabli.meridian.Audit.dto.AuditResponseDTO;
-import com.rradjabli.meridian.Audit.entity.Audit;
-import com.rradjabli.meridian.Audit.repo.AuditRepo;
+import com.rradjabli.meridian.audit.dto.AuditRequestDTO;
+import com.rradjabli.meridian.audit.dto.AuditResponseDTO;
+import com.rradjabli.meridian.audit.entity.Audit;
+import com.rradjabli.meridian.audit.repo.AuditRepo;
 import com.rradjabli.meridian.common.GlobalMapper;
 import org.springframework.stereotype.Service;
 

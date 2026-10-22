@@ -1,7 +1,6 @@
 package com.rradjabli.meridian.company.controller;
 
-import com.rradjabli.meridian.Audit.dto.AuditRequestDTO;
-import com.rradjabli.meridian.Audit.service.AuditService;
+import com.rradjabli.meridian.audit.service.AuditService;
 import com.rradjabli.meridian.company.dto.CompanyRequestDTO;
 import com.rradjabli.meridian.company.dto.CompanyResponseDTO;
 import com.rradjabli.meridian.company.service.CompanyService;

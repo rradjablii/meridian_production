@@ -1,4 +1,4 @@
-package com.rradjabli.meridian.Audit.dto;
+package com.rradjabli.meridian.audit.dto;
 
 import com.rradjabli.meridian.common.enums.RequestState;
 import com.rradjabli.meridian.common.enums.RequestType;

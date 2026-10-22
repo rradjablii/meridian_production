@@ -1,6 +1,5 @@
 package com.rradjabli.meridian.company.entity;
 
-import com.rradjabli.meridian.project.entity.Project;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,8 +8,6 @@ import lombok.Setter;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -37,9 +34,6 @@ public class Company {
 
     @Column(name = "representative_id", nullable = false, unique = true)
     private UUID representativeUserIdentifier;
-
-    @OneToMany(mappedBy = "company")
-    private List<Project> projects = new ArrayList<>();
 
 
 }

@@ -1,6 +1,6 @@
-package com.rradjabli.meridian.Audit.repo;
+package com.rradjabli.meridian.audit.repo;
 
-import com.rradjabli.meridian.Audit.entity.Audit;
+import com.rradjabli.meridian.audit.entity.Audit;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

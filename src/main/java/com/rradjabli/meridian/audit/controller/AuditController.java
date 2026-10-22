@@ -1,8 +1,8 @@
-package com.rradjabli.meridian.Audit.controller;
+package com.rradjabli.meridian.audit.controller;
 
-import com.rradjabli.meridian.Audit.dto.AuditRequestDTO;
-import com.rradjabli.meridian.Audit.dto.AuditResponseDTO;
-import com.rradjabli.meridian.Audit.service.AuditService;
+import com.rradjabli.meridian.audit.dto.AuditRequestDTO;
+import com.rradjabli.meridian.audit.dto.AuditResponseDTO;
+import com.rradjabli.meridian.audit.service.AuditService;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;

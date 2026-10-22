@@ -1,7 +1,7 @@
 package com.rradjabli.meridian.company.service;
 
-import com.rradjabli.meridian.Audit.dto.AuditRequestDTO;
-import com.rradjabli.meridian.Audit.service.AuditService;
+import com.rradjabli.meridian.audit.dto.AuditRequestDTO;
+import com.rradjabli.meridian.audit.service.AuditService;
 import com.rradjabli.meridian.common.GlobalMapper;
 import com.rradjabli.meridian.common.enums.RequestState;
 import com.rradjabli.meridian.common.enums.RequestType;

@@ -1,4 +1,4 @@
-package com.rradjabli.meridian.Audit.entity;
+package com.rradjabli.meridian.audit.entity;
 
 import com.rradjabli.meridian.common.enums.RequestType;
 import com.rradjabli.meridian.common.enums.RequestState;
@@ -41,9 +41,11 @@ public class Audit {
     @Column(name = "request_from")
     private UUID requestFrom;
 
+    @Enumerated(EnumType.STRING)
     @Column(name = "request_type")
     private RequestType requestType;
 
-    @Column(name = "sate")
+    @Enumerated(EnumType.STRING)
+    @Column(name = "request_state")
     private RequestState requestState = RequestState.STARTED;
 }

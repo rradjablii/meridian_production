@@ -1,6 +1,5 @@
 package com.rradjabli.meridian.company.controller;
 
-import com.rradjabli.meridian.audit.service.AuditService;
 import com.rradjabli.meridian.company.dto.CompanyRequestDTO;
 import com.rradjabli.meridian.company.dto.CompanyResponseDTO;
 import com.rradjabli.meridian.company.service.CompanyService;
@@ -21,10 +20,8 @@ public class CompanyController {
 
     private final CompanyService companyService;
     private final UserService userService;
-    private final AuditService auditService;
 
-    public CompanyController(CompanyService companyService, UserService userService, AuditService auditService) {
-        this.auditService = auditService;
+    public CompanyController(CompanyService companyService, UserService userService) {
         this.companyService = companyService;
         this.userService = userService;
     }
